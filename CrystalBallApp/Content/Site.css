@@ -16,3 +16,22 @@ textarea {
     max-width: 280px;
 }
 
+#CBall{
+    position:absolute;
+    height:500px;
+    border:none;
+}
+
+#reply{
+    padding-top:250px;
+    padding-left:100px;
+    position:absolute;
+    color:purple;
+    font-size:20px;
+}
+
+#btn{
+    position:absolute;
+}
+
+

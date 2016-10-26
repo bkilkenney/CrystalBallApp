@@ -1,14 +1,18 @@
 ﻿@{
-    ViewBag.Title = "index";
+    ViewBag.Title = "Crystal Ball App";
 }
 
-<h2>index</h2>
-<button>Click Me</button>
+<h2>Let Ms. Cleo tell you your fortune, Lord have mercy!</h2>
+<button id="btn">Click Me</button>
+
+<img src="~/Content/crystal_ball.jpg" id="CBall" />
+
+
 <p id="reply"></p>
 
 <script>
     $(document).ready(function() {
-        $("button").click(function () {
+        $("#CBall").hover(function () {
             $.get("@Url.Action("ShakeBall", "Home")", function (response) {
                 $("#reply").text(response);
             });
